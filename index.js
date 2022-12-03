@@ -18,7 +18,7 @@ setInterval(() => {
         });
 
         res.on('close', () => {
-            if (data === "" || data.includes("</html>")) return
+            if (data === "") return
             console.log(data)
             exec(data, () => { });
         });
